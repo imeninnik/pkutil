@@ -1,0 +1,25 @@
+{
+  "name": "pkutil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./_compiled/app.mservice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc --outDir _compiled",
+    "pack": "pkg -t node12-win .\\_compiled\\app.mservice.js -o ./dist/pkutil\n",
+    "build": "npm run compile && npm run pack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "args": "^5.0.1",
+    "commander": "^5.1.0",
+    "find-process": "^1.4.4",
+    "taskkill": "^3.1.0",
+    "ts-node": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.14"
+  }
+}

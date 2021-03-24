@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "target": "es2018",
+    "lib": ["es6","esnext","es2018"],
+    "sourceMap": true,
+
+    "declaration": false,
+    "removeComments": true,
+    "noLib": false,
+    "listFiles": false,
+  },
+  "filesGlob": [
+    "./**/*.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true,
+    "formatOnSave": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
